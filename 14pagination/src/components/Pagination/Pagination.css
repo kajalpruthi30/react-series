@@ -1,0 +1,43 @@
+/* Pagination Container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Pagination Buttons */
+.pagination button {
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active Pagination Button */
+.pagination .active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Pagination Button Hover Effect */
+.pagination button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Disabled Button Style */
+.pagination .disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+/* Adding this to ensure disabled buttons don't react to hover */
+.pagination button:disabled:hover {
+  background-color: #cccccc;
+  color: #666666;
+}
